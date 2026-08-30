@@ -5,7 +5,6 @@
 </p>
 
 <p align="center">
-  <strong>A modern, production-grade TodoMVC application implemented in React 18+ and TypeScript.</strong><br />
   <em>Open-source and inspired by <a href="https://github.com/tastejs/todomvc">TasteJS TodoMVC</a> • Built with <strong>Antigravity 2.0</strong></em>
 </p>
 
