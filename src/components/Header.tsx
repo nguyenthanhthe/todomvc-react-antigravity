@@ -22,19 +22,6 @@ export function Header({ onAddTodo }: HeaderProps) {
 
   return (
     <header className="header">
-      <div style={{ textAlign: 'center', paddingTop: '15px', marginBottom: '-10px' }}>
-        <img
-          src="/icon.jpg"
-          alt="TodoMVC Antigravity Logo"
-          style={{
-            width: '64px',
-            height: '64px',
-            borderRadius: '16px',
-            boxShadow: '0 4px 20px rgba(0, 240, 255, 0.35)',
-            display: 'inline-block',
-          }}
-        />
-      </div>
       <h1>todos</h1>
       <input
         className="new-todo"

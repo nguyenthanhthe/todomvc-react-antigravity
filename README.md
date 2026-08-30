@@ -20,6 +20,14 @@
 
 ---
 
+## ?? Preview
+
+<p align="center">
+  <img src="./screenshot.png" alt="TodoMVC Application Screenshot" width="450" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
+</p>
+
+---
+
 ## ?? Highlights
 
 - **100% Spec Compliant**: Follows the official [TodoMVC Application Specification](https://raw.githubusercontent.com/tastejs/todomvc/refs/heads/master/app-spec.md).
@@ -55,7 +63,7 @@
 
 ### Windows Desktop Application (`.exe`)
 
-- Double-click `TodoMVC.exe` in the root folder, or run:
+- Double-click `TodoMVC.exe` or `TodoMVC-App.exe` in the root folder, or run:
   ```powershell
   .\TodoMVC.exe
   ```
@@ -69,6 +77,7 @@
 +-- public/
 ¦   +-- favicon.svg        # SVG Vector Favicon
 ¦   +-- icon.jpg           # App Icon
+¦   +-- screenshot.png     # Application Preview Screenshot
 +-- src/
 ¦   +-- components/        # UI Components (Header, TodoList, TodoItem, Footer, InfoFooter)
 ¦   +-- hooks/             # Domain Hooks (useTodos, useLocalStorage, useHashLocation)
@@ -78,6 +87,7 @@
 ¦   +-- main.tsx           # React DOM Entry
 +-- tests/                 # Comprehensive 14-suite Vitest test battery (296 tests)
 +-- TodoMVC.exe            # Standalone Windows Desktop Executable
++-- screenshot.png         # Preview Image
 +-- README.md
 ```
 

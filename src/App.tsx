@@ -26,6 +26,19 @@ export function App() {
 
   return (
     <>
+      <div style={{ textAlign: 'center', paddingTop: '20px', marginBottom: '-10px' }}>
+        <img
+          src="/icon.jpg"
+          alt="TodoMVC Antigravity Logo"
+          style={{
+            width: '64px',
+            height: '64px',
+            borderRadius: '16px',
+            boxShadow: '0 6px 24px rgba(0, 240, 255, 0.4)',
+            display: 'inline-block',
+          }}
+        />
+      </div>
       <section className="todoapp">
         <Header onAddTodo={addTodo} />
         {hasTodos && (
