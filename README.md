@@ -34,18 +34,18 @@
 Pre-built standalone Windows desktop executables are available on GitHub Releases:
 
 - **[Download Latest Windows Executable (.zip)](https://github.com/nguyenthanhthe/todomvc-react-antigravity/releases/latest)**
-- Includes standalone single-file TodoMVC.exe with embedded WebView2 runtime and zero dependencies needed.
+- Includes standalone single-file `TodoMVC.exe` with embedded WebView2 runtime and zero dependencies needed.
 
 ---
 
 ## 🌟 Highlights
 
 - **100% Spec Compliant**: Follows the official [TodoMVC Application Specification](https://raw.githubusercontent.com/tastejs/todomvc/refs/heads/master/app-spec.md).
-- **Modern React 18+ Hook Architecture**: Uses custom hooks (useTodos, useLocalStorage, useHashLocation) and functional components with strict TypeScript types.
+- **Modern React 18+ Hook Architecture**: Uses custom hooks (`useTodos`, `useLocalStorage`, `useHashLocation`) and functional components with strict TypeScript types.
 - **Robust State Machine**: Double-click inline editing with Escape-cancel guard, Enter/blur commit, and automatic empty-string deletion.
-- **Client-Side Hash Routing**: Native #/, #/active, and #/completed routing.
-- **Storage Resilience**: Quota-safe localStorage synchronization.
-- **Cross-Platform Delivery**: Includes both web SPA and a native Windows Desktop (TodoMVC.exe) wrapper using WebView2.
+- **Client-Side Hash Routing**: Native `#/`, `#/active`, and `#/completed` routing.
+- **Storage Resilience**: Quota-safe `localStorage` synchronization.
+- **Cross-Platform Delivery**: Includes both web SPA and a native Windows Desktop (`TodoMVC.exe`) wrapper using WebView2.
 - **Comprehensive Verification**: 296 automated tests across 14 test suites in Vitest + React Testing Library.
 
 ---
@@ -55,34 +55,37 @@ Pre-built standalone Windows desktop executables are available on GitHub Release
 ### Web Application
 
 1. **Install dependencies**:
-   `ash
-   npm install
-   `
+```bash
+npm install
+```
+
 2. **Start development server**:
-   `ash
-   npm run dev
-   `
+```bash
+npm run dev
+```
+
 3. **Build for production**:
-   `ash
-   npm run build
-   `
+```bash
+npm run build
+```
+
 4. **Run test suite**:
-   `ash
-   npm test
-   `
+```bash
+npm test
+```
 
 ### Windows Desktop Application (.exe)
 
-- Double-click TodoMVC.exe or TodoMVC-App.exe in the root folder, or run:
-  `powershell
-  .\TodoMVC.exe
-  `
+- Double-click `TodoMVC.exe` or `TodoMVC-App.exe` in the root folder, or run:
+```powershell
+.\TodoMVC.exe
+```
 
 ---
 
 ## 📁 Project Structure
 
-`	ext
+```text
 ├── desktop/               # Windows Desktop wrapper (C# / WebView2)
 ├── public/
 │   ├── favicon.svg        # SVG Vector Favicon
@@ -99,7 +102,7 @@ Pre-built standalone Windows desktop executables are available on GitHub Release
 ├── TodoMVC.exe            # Standalone Windows Desktop Executable
 ├── screenshot.png         # Preview Image
 └── README.md
-`
+```
 
 ---
 
