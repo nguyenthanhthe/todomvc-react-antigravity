@@ -27,17 +27,11 @@ export function App() {
 
   return (
     <>
-      <div style={{ textAlign: 'center', paddingTop: '20px', marginBottom: '-10px' }}>
+      <div className="app-brand">
         <img
           src={appLogo}
           alt="TodoMVC Antigravity Logo"
-          style={{
-            width: '64px',
-            height: '64px',
-            borderRadius: '16px',
-            boxShadow: '0 6px 24px rgba(0, 240, 255, 0.4)',
-            display: 'inline-block',
-          }}
+          className="app-logo"
         />
       </div>
       <section className="todoapp">

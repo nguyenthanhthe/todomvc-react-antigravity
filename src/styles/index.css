@@ -30,9 +30,28 @@ body {
 	min-width: 230px;
 	max-width: 550px;
 	margin: 0 auto;
+	padding: max(25px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(30px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-weight: 300;
+	box-sizing: border-box;
+}
+
+.app-brand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+	margin-bottom: -15px;
+}
+
+.app-logo {
+	width: 64px;
+	height: 64px;
+	border-radius: 18px;
+	box-shadow: 0 8px 24px rgba(0, 240, 255, 0.45);
+	display: block;
+	object-fit: cover;
 }
 
 .hidden {
@@ -41,10 +60,11 @@ body {
 
 .todoapp {
 	background: #fff;
-	margin: 130px 0 40px 0;
+	margin: 110px 0 40px 0;
 	position: relative;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
 	            0 25px 50px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
 }
 
 .todoapp input::-webkit-input-placeholder {
@@ -67,9 +87,9 @@ body {
 
 .todoapp h1 {
 	position: absolute;
-	top: -140px;
+	top: -115px;
 	width: 100%;
-	font-size: 80px;
+	font-size: 72px;
 	font-weight: 200;
 	text-align: center;
 	color: #b83f45;
