@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+build/
+bin/
+obj/
+
+# .NET / Executable binaries in root
+*.exe
+*.dll
+*.pdb
+*.runtimeconfig.json
+*.deps.json
+*.xml
+runtimes/
+
+# Logs & temp
+*.log
+.DS_Store
+Thumbs.db
+.agents/
