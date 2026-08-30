@@ -21,6 +21,17 @@ public partial class Form1 : Form
         this.StartPosition = FormStartPosition.CenterScreen;
         this.MinimumSize = new Size(550, 600);
 
+        string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+        string icoPath = Path.Combine(baseDir, "app.ico");
+        if (!File.Exists(icoPath))
+        {
+            icoPath = Path.GetFullPath(Path.Combine(baseDir, "..", "..", "..", "app.ico"));
+        }
+        if (File.Exists(icoPath))
+        {
+            try { this.Icon = new Icon(icoPath); } catch { }
+        }
+
         webView = new WebView2
         {
             Dock = DockStyle.Fill
