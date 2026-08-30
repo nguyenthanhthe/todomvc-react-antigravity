@@ -21,16 +21,15 @@ public partial class Form1 : Form
         this.StartPosition = FormStartPosition.CenterScreen;
         this.MinimumSize = new Size(550, 600);
 
-        string baseDir = AppDomain.CurrentDomain.BaseDirectory;
-        string icoPath = Path.Combine(baseDir, "app.ico");
-        if (!File.Exists(icoPath))
+        try
         {
-            icoPath = Path.GetFullPath(Path.Combine(baseDir, "..", "..", "..", "app.ico"));
+            var icon = Icon.ExtractAssociatedIcon(Environment.ProcessPath ?? Application.ExecutablePath);
+            if (icon != null)
+            {
+                this.Icon = icon;
+            }
         }
-        if (File.Exists(icoPath))
-        {
-            try { this.Icon = new Icon(icoPath); } catch { }
-        }
+        catch { }
 
         webView = new WebView2
         {
