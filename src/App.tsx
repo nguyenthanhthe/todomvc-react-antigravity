@@ -1,3 +1,4 @@
+import appLogo from './assets/icon.jpg';
 import { useTodos } from './hooks/useTodos';
 import {
   Header,
@@ -28,7 +29,7 @@ export function App() {
     <>
       <div style={{ textAlign: 'center', paddingTop: '20px', marginBottom: '-10px' }}>
         <img
-          src="/icon.jpg"
+          src={appLogo}
           alt="TodoMVC Antigravity Logo"
           style={{
             width: '64px',
