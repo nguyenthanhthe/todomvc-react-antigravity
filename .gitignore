@@ -23,3 +23,5 @@ runtimes/
 .DS_Store
 Thumbs.db
 .agents/
+
+*.zip
